@@ -1,12 +1,12 @@
 body {
   font-size: 110%;
-  font-family: Trebuchet MS;
+  font-family: Monaco, Lucida Console;
   text-align: center;
   margin: 1rem 35rem 50rem 35rem;
   padding: 0rem 1rem 0rem 1rem;
 }
 .img {
-  
+
 }
 
 ul {
@@ -34,12 +34,18 @@ a:active {
   text-decoration: underline;
 }
 
-div {
-
+#sop {
+  font-size: 350%
+  font-weight: 500;
 }
 
 h2, h3 {
   text-align: left;
+}
+
+h2 {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
 }
 
 .projects {
