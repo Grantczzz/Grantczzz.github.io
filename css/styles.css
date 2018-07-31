@@ -18,9 +18,19 @@
     display: none; 
 }
 
+@media (max-width: 600px) {
+    body {
+		overflow-x: hidden;
+		overflow-y: auto;
+    }
+}
+
 @media screen and (max-width: 40em) {
+	.page{
+		overflow: scroll;
+	}
 	.header {
-		padding: 50px 20px 1em;
+		padding: 25px 20px 1em;
 	}
 	.header__title {
 		font-size: 1.8em;
@@ -55,7 +65,7 @@ a:hover {
 /* Blueprint header */
 
 .header {
-	padding: 6em 10vw 2em;
+	padding: 4em 10vw 2em;
 }
 
 .header__main {

@@ -290,9 +290,6 @@ html.js,
 	transform: rotate3d(0, 0, 1, -45deg);
 }
 @media screen and (max-width: 60em) {
-	.page{
-		overflow: auto;
-	}
 	.info {
 		max-width: 100%;
 	}
