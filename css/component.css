@@ -191,6 +191,10 @@ html.js,
 	margin: auto;
 	color: #000000;
 	padding-top: 1%;
+	text-decoration: overline underline;
+}
+.git:hover{
+	text-decoration: line-through;
 }
 .desc {
 	font-size: 1.25em;
@@ -286,6 +290,9 @@ html.js,
 	transform: rotate3d(0, 0, 1, -45deg);
 }
 @media screen and (max-width: 60em) {
+	.page{
+		overflow: auto;
+	}
 	.info {
 		max-width: 100%;
 	}
@@ -321,8 +328,8 @@ html.js,
 		font-size: 1em;
 	}
 	.hireme{
-		padding-top: 10vh;
-		padding-bottom: 8vh;
+		padding-top: 5vh;
+		padding-bottom: 4vh;
 		min-width: 100%;
 		font-size: 8em;
 	}
@@ -340,6 +347,9 @@ html.js,
 	}
 }
 @media screen and (max-width: 40em) {
+	.page{
+		overflow: auto;
+	}
 	.js .pages-nav {
 		display: block;
 		padding: 10px 20px 0 20px;
@@ -381,8 +391,8 @@ html.js,
 		font-size: 0.85em;
 	}
 	.hireme{
-		padding-top: 10vh;
-		padding-bottom: 4vh;
+		padding-top: 5vh;
+		padding-bottom: 1vh;
 		min-width: 85%;
 		font-size: 3em;
 		
