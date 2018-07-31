@@ -290,7 +290,7 @@ html.js,
 	transform: rotate3d(0, 0, 1, -45deg);
 }
 @media screen and (max-width: 60em) {
-	body {
+	.page {
 		overflow-x: hidden;
 	}
 	.info {
@@ -347,7 +347,7 @@ html.js,
 	}
 }
 @media screen and (max-width: 40em) {
-	body {
+	.page {
 		overflow-x: hidden;
 	}
 	.js .pages-nav {

@@ -19,9 +19,6 @@
 }
 
 @media screen and (max-width: 40em) {
-	.page {
-		overflow-x: hidden;
-	}
 	.header {
 		padding: 20px 20px 1em;
 	}
