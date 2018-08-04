@@ -25,9 +25,6 @@
 	.header__title {
 		font-size: 1.8em;
 	}
-	.name {
-		font-size: 1.5em;
-	}
 }
 
 /* Main styles */
@@ -84,18 +81,6 @@ a:hover {
 	letter-spacing: 0.5em;
 	text-transform: uppercase;
 	color: rgb(0,0,0);
-}
-.name { 
-	font-size: 0.85em;
-	font-weight: 700;
-	text-align: inherit;
-	z-index: 100;
-	display: block;
-	padding-top: 8%;
-	letter-spacing: 0.5em;
-	text-transform: uppercase;
-	color: rgb(0,0,0);
-	margin-left: 19%; 
 }
 .tooltip:after {
 	font-size: 50%;
