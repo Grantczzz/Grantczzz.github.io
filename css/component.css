@@ -168,6 +168,11 @@ html.js,
 	max-width: 100%;
 	max-height: 80%;
 }
+container{
+	margin-left: 10%;
+	margin-right: 10%;
+
+}
 .name { 
 	font-size: 2em;
 	font-weight: 700;
@@ -183,7 +188,6 @@ html.js,
 }
 .project{
 	bottom: 4vh;
-	max-width: 75%;
 	max-height: 60%;
 	display: block;
 	margin: auto;  
