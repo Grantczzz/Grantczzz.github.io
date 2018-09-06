@@ -2,6 +2,7 @@ html.js,
 .js body {
 	overflow: hidden;
 	height: 100vh;
+	background:rgb(158, 157, 157); 
 }
 
 /* Pages nav */
@@ -168,78 +169,64 @@ html.js,
 	max-width: 100%;
 	max-height: 80%;
 }
-container{
-	margin-left: 10%;
-	margin-right: 10%;
-
+main {
+    columns: 400px;
+	column-gap: 20px;
+	max-width: 70%;
+	margin: auto;
 }
-.name { 
-	font-size: 2em;
-	font-weight: 700;
-	text-align: inherit;
-	z-index: 100;
-	display: block;
-	padding-top: 8%;
-	margin-bottom: 0%;
-	letter-spacing: 0.2em;
-	text-transform: uppercase;
-	color: #ffffff;
-	margin-left: 18%; 
-}
-.project{
-	bottom: 4vh;
-	max-height: 60%;
-	display: block;
-	margin: auto;  
-	border-radius: 1%;  
-	transition: .3s;
-}
-.project:hover{
-	filter: brightness(115%);
+article {
+    break-inside: avoid-column;
+	margin-bottom: 1rem; 
+	padding: 20px;
+	min-width: 100%;
+	border-radius: 5px;
+	background: transparent;
 }
 .git{
 	font-weight: 700;
-	font-size: 1.25em;
+	margin-top: 0%;
+	font-size: .80em;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
-	max-width: 50%;
-	text-align: center;
-	display: block;
-	margin: auto;
+	text-align: left;
 	color: #000000;
-	padding-top: 1%;
-
+	padding-bottom: 7.5%;
+} 
+.frame {
+	max-width: 100%;
+	text-align: center;	
+	position: relative;
+	cursor: pointer;	
+	padding-bottom: 2%;
 }
-.git:hover{
+.frame img {
+	max-width: 100%;
+	border-radius: 2%;
+}
+.frame .details {
 	color: #ffffff;
-	text-decoration: line-through;
+	max-width: 100%;
+	min-width: 70%;	
+	padding: 2%;
+	position: absolute;
+	content: "";
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotateY(90deg);
+	transform-origin: 50%;
+	background: transparent;	
+	opacity: 0;
+	transition: all 0.4s ease-in;
+	
 }
-.desc {
-	font-size: 1.25em;
-	max-width: 50%;
-	margin-top: 2em;
-	text-align: center;
-	display: block;
-	margin: auto;
-	padding-top: 2%;
-	padding-bottom: 2%
+.frame:hover img{
+	transition: 50ms;
+	filter: blur(5px) brightness(20%)
 }
-.hireme{
-	font-weight: 600;
-	font-size: 10em;
-	letter-spacing: 0.1em;
-	padding-top: 4vh;
-	padding-bottom: 10vh;
-	padding-right: 2%;
-	max-width: 80%;
-	text-align: center;
-	display: block;
-	margin: auto;
-	color: #ffffff;
-}
-.hireme:hover{
-	color: #000000;
-	text-decoration: line-through;
+.frame:hover .details {
+	transform: translate(-50%, -50%) rotateY(0deg);
+	opacity: .80;
 }
 /* BUTTON*/
 .menu-button {
@@ -308,20 +295,89 @@ container{
 	-webkit-transform: rotate3d(0, 0, 1, -45deg);
 	transform: rotate3d(0, 0, 1, -45deg);
 }
+/* BTN */
+.container-2 {
+	text-align: center;
+	margin-top: 10%;
+	width: 100%;
+	height: 33%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  /*
+   BUTTON STYLING
+  */
+  
+  .btn {
+	position: relative;
+	font-size: 2em;
+	font-weight: 700;
+	color: #ffffff;
+	width: 384px;
+	height: 128px;
+	line-height: 128px;
+	transition: all 0.3s;
+  }
+  .btn span {
+	transition: all 0.3s;
+	transform: scale(1, 1);
+  }
+  .btn::before, .btn::after {
+	content: '';
+	position: absolute;
+	transition: all 0.3s;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+  }
+  
+  /* ROATE */
+  .btn-rotate::before, .btn-rotate::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	  height: 100%;
+	bottom: 0;
+	  left: 0;
+	  z-index: 1;
+	transition: all .5s;
+	border: 5px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .btn-rotate:hover::after {
+	animation-name: rotatecw;
+	animation-duration: 2s;
+  }
+  .btn-rotate:hover::before {
+	animation-name: rotateccw; 
+	animation-duration: 3s;
+  }
+  .btn-rotate:hover::after, .btn-rotate:rotate::before {
+	left: 96px;
+	width: 64px;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+  }
+  
+  @keyframes rotatecw {
+	  from {transform: rotate(0deg);}
+	  to {transform: rotate(360deg);}
+  }
+  
+  @keyframes rotateccw {
+	  from {transform: rotate(0deg);}
+	  to {transform: rotate(-360deg);}
+  }
+  
 @media screen and (max-width: 60em) {
 	.page {
 		overflow-x: hidden;
 	}
 	.info {
 		max-width: 100%;
-	}
-	.desc {
-		max-width: 70%;
-	}
-	.name {
-		font-size: .75em;
-		margin-left: 13%;
-		margin-bottom: 1%;
 	}
 	.poster {
 		position: relative;
@@ -332,24 +388,19 @@ container{
 		max-height: 50vh;
 		margin: 0 0 0 50%;
 	}
-	.project {
-		position: relative;
-		top: auto;
-		left: auto;
-		display: block;
-		max-width: 75%;
-		max-height: 50vh;
-		margin: auto;
+	main{
+		max-width: 80%;
+	}
+	.details h1{
+		font-size:90%;
+	}
+	.details p{
+		font-size: 70%;
 	}
 	.git{
-		min-width: 80%;
-		padding-top: -2em;
-		font-size: 1em;
-	}
-	.hireme{
-		font-size: 2.125em;
-		text-transform: uppercase;
-		color: #fff;
+		padding-top: 6%;
+		font-size: .50em;
+		text-align: center;
 	}
 	.pages-nav__item {
 		width: 50%;
@@ -362,6 +413,9 @@ container{
 	}
 	.link--social {
 		margin: 0 0.1em;
+	}
+	.container-2{
+		margin-top: 20%;
 	}
 }
 @media screen and (max-width: 40em) {
@@ -393,26 +447,20 @@ container{
 	.info {
 		font-size: 0.85em;
 	}
-	.name{
-		font-size: .65em;
-		padding-bottom: 6%;
-	}
 	.poster {
 		margin: 1em;
 	}
 	.git{
-		font-size: .75em;
+		font-size: .40em;
 		min-width: 80%;
-		margin-top: -5%;
 	}
-	.desc {
-		font-size: 0.85em;
+	main{
+		max-width: 80%;
 	}
-	.hireme{
-		padding-top: 5vh;
-		padding-bottom: 1vh;
-		min-width: 85%;
-		font-size: 3em;
-		
+	.details h1{
+		font-size:80%;
+	}
+	.details p{
+		font-size: 60%;
 	}
 }
