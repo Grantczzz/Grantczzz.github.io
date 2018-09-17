@@ -305,10 +305,7 @@ article {
 	justify-content: center;
 	align-items: center;
   }
-  /*
-   BUTTON STYLING
-  */
-  
+  /*BUTTON STYLING*/ 
   .btn {
 	position: relative;
 	font-size: 2em;
