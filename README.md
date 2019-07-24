@@ -1,4 +1,3 @@
+# grantcz.com
 
-Personal Portfolio site
-
-
+A hand-coded personal portfolio website, built using bootstrap & jquery.s

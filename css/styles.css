@@ -11,7 +11,7 @@ body{
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
 	color: #FAEBD7;
-	background: #191970;
+	background: conic-gradient(#000033,#000066);
 	scroll-behavior: smooth;
 }
 p{
@@ -46,13 +46,14 @@ a#tw{
 	font-weight: 700;
 	font-style: normal;
 	padding: 5px;
+	padding-top: 10px;
 	margin-right: 10px;
 	position: fixed;
 	float: right;
 	writing-mode: vertical-rl;
 	text-orientation: upright;
 	text-decoration: none;
-	text-shadow: 0px 2px #A52A2A;
+	text-shadow:2px 0px #990000;
 }
 a#li{
 	font-family: nazare, sans-serif;
@@ -60,12 +61,13 @@ a#li{
 	font-style: normal;
 	bottom: 0;
 	padding: 5px;
+	padding-bottom: 10px;
 	position: fixed;
 	float: left;
 	writing-mode: vertical-lr;
 	text-orientation: upright;
 	text-decoration: none;
-	text-shadow: 0px -2px #A52A2A;
+	text-shadow: -2px 0px #990000;
 }
 a#gh{
 	font-family: nazare, sans-serif;
@@ -73,6 +75,7 @@ a#gh{
 	font-style: normal;
 	bottom: 0;
 	padding: 5px;
+	padding-bottom: 10px;
 	margin-right: 10px;
 	position: fixed;
 	float: right;
@@ -80,11 +83,11 @@ a#gh{
 	writing-mode: vertical-rl;
 	text-orientation: upright;
 	text-decoration: none;
-	text-shadow: 0px 2px #A52A2A;
+	text-shadow: 2px 0px #990000;
 }
 /* CONTENT */
 div#content {
- max-width: 90%;
+ max-width: 80%;
 }
 div.y{	
 	scroll-snap-type: y mandatory;
@@ -93,7 +96,7 @@ p#section{
 	padding-top: 2.5vh;
 	padding-bottom: 5vh;
 	text-decoration: underline;
-	text-shadow: 0px 1px #A52A2A;
+	text-shadow: 0px 1px #990000;
 }
 div#intro{
 	padding-top: 42vw;
@@ -102,17 +105,17 @@ div#intro{
 p#focus{
 	font-weight: 700;
 	font-style: normal;
-	font-size: 175%;
+	font-size: 150%;
 	text-align: center;
-	text-shadow: 0px 2px #A52A2A;
+	text-shadow: 0px 2px #990000;
 }
 p#head{
 	font-weight: 700;
 	font-style: normal;
-	font-size: 175%;
+	font-size: 150%;
 	text-align: center;
 	text-decoration: underline;
-	text-shadow: 0px 2px #A52A2A;
+	text-shadow: 0px 2px #990000;
 }
 p#sub{
 	text-align: center;
@@ -127,7 +130,7 @@ div#design, div#dev{
 	padding-bottom: 5.25vw;
 }
 div#contact{
-	text-shadow: 0px 2px #A52A2A;
+	text-shadow: 0px 2px #990000;
 	padding-bottom: 5.25vw;
 	font-weight: 500;
 	font-size: 150%;
@@ -138,6 +141,9 @@ div#footer p{
 }
 /* BREAKPOINTS */
 @media only screen and (min-width: 320px) and (max-width: 479px){
+	p#section{
+		padding-bottom: 2vh;
+	}
 
 }
 @media only screen and (min-width: 480px) and (max-width: 767px){
@@ -147,6 +153,9 @@ div#footer p{
 
 }
 @media only screen and (min-width: 992px){
+	body{
+		font-size: 1.25rem;
+	}
 	p#focus{
 		text-align: right;
 		padding-left: 50%;
@@ -157,12 +166,11 @@ div#footer p{
 }
 @media only screen and (min-width: 1200px){
 	body{
-		font-size: 2rem;
+		font-size: 1.50rem;
 	}
 	p#focus{
 		text-align: right;
-		line-break: loose;
-		padding-left: 35%;
+		padding-left: 50%;
 	}
 	p#section{
 		visibility: hidden;
