@@ -121,11 +121,15 @@ p#sub{
 div#work, div#skills{
 	padding-bottom: 10.5vw;
 }
-div#job, div#side{
+div#job, div#side, div#design, div#dev{
 	padding-bottom: 5.25vw;
+	display: block;
 }
-div#design, div#dev{
-	padding-bottom: 5.25vw;
+#job p, #design p, #contact p{
+	text-align: left;
+}
+#side p, #dev p{
+	text-align: right;
 }
 div#contact{
 	text-shadow: 0px 2px #990000;
@@ -142,10 +146,28 @@ div#footer p{
 	p#section{
 		padding-bottom: 2vh;
 	}
-
+	div#job, div#side, div#dood, div#design, div#dev, div#other{
+		padding-bottom: 100px;
+		align-content: center;
+	}
+	div#job p, div#side p, div#dood p, div#design p, div#dev p, div#other p, #contact p{
+		text-align: center;
+	}
+	div#contact{
+		font-size: 125%;
+	}
 }
 @media only screen and (min-width: 480px) and (max-width: 767px){
-
+	div#job, div#side, div#dood, div#design, div#dev, div#other{
+		padding-bottom: 75px;
+		align-content: center;
+	}
+	div#job p, div#side p, div#dood p, div#design p, div#dev p, div#other p, #contact p{
+		text-align: center;
+	}
+	div#contact{
+		font-size: 125%;
+	}
 }
 @media only screen and (min-width: 768px) and (max-width: 991px){
 

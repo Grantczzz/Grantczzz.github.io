@@ -5,10 +5,10 @@
 		<link rel='apple-touch-icon' href='http://www.grantcz.com/images/icons/favicon16x16.png'> <!-- iPhone -->
 		<link rel='apple-touch-icon-precomposed' sizes='72x72' href='http://www.grantcz.com/images/icons/apple-touch-icon-72x72-precomposed.png'> <!-- iPad -->
 		<link rel='apple-touch-icon-precomposed' sizes='114x114' href='http://www.grantcz.com/images/icons/apple-touch-icon-114x114-precomposed.png'>
-		<link rel='shortcut icon' href='http://www.grantcz.com/images/icons/favicon16x16.png'>
+		<link rel='shortcut icon' href='http://www.grantcz.com/images/icons/favicon.png'>
 
 		<meta property="og:title" content="Grant Cz" />
-		<meta property="og:description" content="internet stuff." />
+		<meta property="og:description" content="internet stuff."/>
 		<meta property="og:url" content="http://grantcz.com"/>
 		<meta property="og:image" content="http://grantcz/images/arc.png"/>
 
@@ -51,6 +51,14 @@
 		<!-- Custom CSS & JS -->
 		<link rel="stylesheet" href="css/styles.css" type="text/css">
 		<script type="text/javascript" src="js/main.js"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124522072-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-124522072-1');
+		</script>
 	</head>
 
 	<body>
@@ -369,17 +377,17 @@
 			<div id="work">
 				<p id="section">Work</p>
 				<div id="job">
-					<p class="text-left" id="head">Occupation:</p>
-					<p class="text-left" id="sub">Freelancer</p>
+					<p id="head">Occupation:</p>
+					<p id="sub">Freelancer</p>
 				</div>
 				<div id="side">
-					<p class="text-right" id="head">API Projects:</p>
-					<p class="text-right" id="sub"><a href="https://github.com/Grantcz/WeatherWatcher" target="_blank">Weather-Watcher</a></p>
-					<p class="text-right" id="sub"><a href="https://github.com/Grantcz/Audio-Translator" target="_blank">Audio-Translator</a></p>
-					<p class="text-right" id="sub"><a href="https://github.com/Grantcz/Bar-Builder" target="_blank">Bar-Builder</a></p>
+					<p id="head">API Projects:</p>
+					<p id="sub"><a href="https://github.com/Grantcz/WeatherWatcher" target="_blank">Weather-Watcher</a></p>
+					<p id="sub"><a href="https://github.com/Grantcz/Audio-Translator" target="_blank">Audio-Translator</a></p>
+					<p id="sub"><a href="https://github.com/Grantcz/Bar-Builder" target="_blank">Bar-Builder</a></p>
 				</div>
 				<div id="dood">
-					<p id="head">Doodles & Designs:</p>
+					<p id="head">Doodles:</p>
 					<p id="sub"><a href="https://dribbble.com/grant-czernicki/buckets" target="_blank">Dribbble</a></p>
 					<p id="sub"><a href="https://www.behance.net/Grantcz/" target="_blank">Behance</a></p>
 				</div>
@@ -387,12 +395,12 @@
 			<div id="skills">
 				<p id="section">Knowledge</p>
 				<div id="design">
-					<p class="text-left" id="head">Design:</p>
-					<p class="text-left" id="sub">Branding, Mobile, UI & UX,<br>Adobe CC & 3D Design.</p>
+					<p id="head">Design:</p>
+					<p id="sub">Branding, Mobile, UI & UX,<br>Adobe CC & 3D Design.</p>
 				</div>
 				<div id="dev">
-					<p class="text-right" id="head">Developer:</p>
-					<p class="text-right" id="sub">Core 3, Vue.JS, Bootstrap,<br>API use, Google Analytics,<br>Wordpress, Linux, jQuery.</p>
+					<p id="head">Developer:</p>
+					<p id="sub">Core 3, Vue.JS, Bootstrap,<br>API use, Google Analytics,<br>Wordpress, Linux, jQuery.</p>
 				</div>
 				<div id="other">
 					<p id="head">Other Skills:</p>
@@ -402,10 +410,10 @@
 			<div id="info">
 				<p id="section">Contact</p>
 				<div id="contact">
-					<p class="text-left" >Grant Czernicki</p>
-					<p class="text-left" ><a href="mailto:grantcz@gmail.com" target="_top">Email</a></p>
-					<p class="text-left" id="clock"></p>
-					<p class="text-left" ><a href="https://www.google.com/maps/place/39%C2%B005'58.9%22N+94%C2%B034'43.0%22W/@39.2144049,-103.5508471,5z/data=!4m5!3m4!1s0x0:0x0!8m2!3d39.0997!4d-94.5786" target="blank_">39.0997° N, 94.5786° W</a></p>
+					<p>Grant Czernicki</p>
+					<p><a href="mailto:grantcz@gmail.com" target="_top">Email</a></p>
+					<p id="clock"></p>
+					<p><a href="https://www.google.com/maps/place/39%C2%B005'58.9%22N+94%C2%B034'43.0%22W/@39.2144049,-103.5508471,5z/data=!4m5!3m4!1s0x0:0x0!8m2!3d39.0997!4d-94.5786" target="blank_">39.0997° N, 94.5786° W</a></p>
 				</div>
 			</div>
 			<div id="footer">
